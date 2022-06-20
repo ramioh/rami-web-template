@@ -4,4 +4,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>Company.Product.Service.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Company.Product.Service.$(MSBuildProjectName)</RootNamespace>
+  </PropertyGroup>
+
 </Project>
