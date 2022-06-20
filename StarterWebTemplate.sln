@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Domain", "4.Domain", "{62
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "1.Presentation\Api\Api.csproj", "{137BE9AB-D3CF-4D0F-9C28-38AEA1139BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "1.Presentation\ViewModels\ViewModels.csproj", "{BE20A460-65B7-43F8-8578-C38F72FF9CD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.ViewModels", "1.Presentation\Api.ViewModels\Api.ViewModels.csproj", "{BE20A460-65B7-43F8-8578-C38F72FF9CD8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "2.Infrastructure\Persistence\Persistence.csproj", "{3A02004F-F862-4350-8AE6-402F7D75D82D}"
 EndProject
