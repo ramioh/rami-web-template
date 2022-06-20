@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "1.Presentation\Api\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "1.Presentation\ViewModels\ViewModels.csproj", "{BE20A460-65B7-43F8-8578-C38F72FF9CD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "2.Infrastructure\Infrastructure\Infrastructure.csproj", "{3A02004F-F862-4350-8AE6-402F7D75D82D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "2.Infrastructure\Persistence\Persistence.csproj", "{3A02004F-F862-4350-8AE6-402F7D75D82D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "3.Application\Application\Application.csproj", "{63A6CFDB-FF43-438C-B190-DB73CF42B069}"
 EndProject
