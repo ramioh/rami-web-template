@@ -11,8 +11,10 @@ The solution is composed of a hierarchy of directories and projects that manifes
 * `0.Build`: Contains general build-related files. Not specific to the architecture.
 * `1.Presentation`: Contains projects pertaining to the presentation layer, such as `Api` and `Api.ViewModels`.
 * `2.Infrastructure`: Contains projects for data access, either persistence or access to upstream data providers. Both are parts of the infrastructure layer in a typical layered architecture.
-Presentation and infrastructure are the two tenants of the outermost layer of layered architecture. So, to be precise, each of them is only _half layer_.
+    > Presentation and infrastructure are the two tenants of the outermost layer of layered architecture. So, to be precise, each of them is only _half layer_.
+
 * `3.Application`: Contains projects in the application layer.
+
 * `4.Domain`: Contains projects in the domain layer. This is the innermost layer of the architecture, and the most protected and purest one. 
 
 ### 2. Directory.Build.Props
@@ -25,3 +27,6 @@ There are other features that are also configured in the `Directory.Build.Props`
 
 ### 3. Root namespace and assembly name
 Root namespace and assembly name are both equal to `Company.Product.Service.{ProjectName}`. Replace `Company.Product.Service` with your own value in the `Directory.Build.Props` file. All projects will inherit these settings. Consider this behavior when naming your projects, as the name will end up being part of the root namespace and the assembly name.
+
+### 100. Launch settings and app settings?
+### 101. Swagger?
