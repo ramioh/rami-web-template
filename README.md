@@ -20,4 +20,8 @@ The solution employs a `Directory.Build.Props` file that defines all the common 
 * .NET 6.0 target framework.
 * Enabled nullable reference types.
 * Enabled implicit `using`.
-* Root namespace and assembly name are both equal to `Company.Product.Service.{ProjectName}`. Replace `Company.Product.Service` with your own value in the props file.
+
+There are other features that are also configured in the `Directory.Build.Props` file. Those are listed below as separate headings due to their significance.
+
+### 3. Root namespace and assembly name
+Root namespace and assembly name are both equal to `Company.Product.Service.{ProjectName}`. Replace `Company.Product.Service` with your own value in the `Directory.Build.Props` file. All projects will inherit these settings. Consider this behavior when naming your projects, as the name will end up being part of the root namespace and the assembly name.
