@@ -1,3 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Contracts\Application.Contracts.csproj" />
+    <ProjectReference Include="..\Persistence.Contracts\Persistence.Contracts.csproj" />
+  </ItemGroup>
 </Project>

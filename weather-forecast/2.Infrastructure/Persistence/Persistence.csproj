@@ -6,5 +6,8 @@
       <HintPath>..\..\..\common-packages\DependencyInjection\DependencyInjection\bin\Debug\net6.0\Company.Product.Common.DependencyInjection.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3.Application\Persistence.Contracts\Persistence.Contracts.csproj" />
+  </ItemGroup>
 
 </Project>
