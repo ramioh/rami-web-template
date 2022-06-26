@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <AssemblyName>Company.Product.Service.$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>Company.Product.Service.$(MSBuildProjectName)</RootNamespace>
+    <AssemblyName>Company.Product.$(SolutionName).$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Company.Product.$(SolutionName).$(MSBuildProjectName)</RootNamespace>
   </PropertyGroup>
 
 </Project>
