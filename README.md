@@ -13,7 +13,7 @@ The repository is structured to allow for multiple solutions, each in its own fo
 
 ### 2. Layered architecture
 The Weather Forecast solution is composed of a hierarchy of folders and projects that manifests layered architecture. The hierarchy is as follows:
-* `0.Build`: Contains general build-related files. Not specific to the architecture.
+* `0.CompositionRoot`: Not specific to the architecture, but contains the `Host` project, which acts as the composition root of the application.
 * `1.Presentation`: Contains projects pertaining to the presentation layer, such as `Api` and `Api.ViewModels`.
 * `2.Infrastructure`: Contains projects for data access, either persistence or access to upstream data providers Both are parts of the infrastructure layer in a typical layered architecture.
     > Presentation and infrastructure are the two tenants of the outermost layer of layered architecture. So, to be precise, each of them is only _half layer_. Being two halves of the same layer does not mean that they could have a dependency on one another.
