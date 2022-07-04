@@ -1,4 +1,4 @@
-namespace Host;
+namespace Company.Product.WeatherForecast.Api;
 
 public class WeatherForecast
 {

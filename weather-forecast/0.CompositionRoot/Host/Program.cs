@@ -1,8 +1,14 @@
+using Company.Product.WeatherForecast.Api.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var assembly = typeof(WeatherForecastController).Assembly;
+builder.Services
+    .AddControllers()
+    .AddApplicationPart(assembly);
 
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
