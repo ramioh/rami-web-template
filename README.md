@@ -57,6 +57,9 @@ The WebApi Starter Template takes a completely different approach to populate th
 
 This approach is much cleaner in my opinion. Not only does it overcome the two disadvantages mentioned above for traditional DI registration, but it also moves the declaration of registration parameters (i.e. types and lifetime) to where they should be; inside the implemented service. This makes those parameters more visible to the developers.
 
+>### 100. Launch settings and app settings?
+>### 101. Swagger?
+
 ## Template personalization
 When using the WebApi Starter Template to create a new solution, the following should be done before it is ready for use.
 1. Replace the value for `Company.Product` in `Directory.Build.Props`.
@@ -64,3 +67,14 @@ When using the WebApi Starter Template to create a new solution, the following s
 3. Rename the solution file `./weather-forecast/WeatherForecast.sln`.
 4. All namespace `using` statements that start with `Company.Product.Common` and `Company.Product.WeatherForecast` in both solutions should be replaced.
 5. Publish the `DependencyInjection` project as a nuget package, and replace the path-based references to it with its nuget package reference. The use of a path-based reference is only for simplicity and should not be used in production.
+
+
+>## Purposefully omitted features
+>The following is the list of features that I omitted on purpose. I don't have plans to add them.
+
+>### 1. Separate interface projects in the Application layer
+>The presentation layer has a dependency on the Application layer. One could argue that we should have separate projects for the interfaces that are implemented by the application layer, then have the presentation layer depend on those slim interface projects (called adapters in the port-adapter architecture) in order to conceal the actual implementations. 
+
+>I found this to be an overkill. First, the majority of developers have been trained enough to create dependencies on interfaces even when the implementations of these interfaces sit in the same project. Second, the Application layer is often the one with the most projects. Having twice as many of these projects is unnecessary clutter, in my opinion.
+
+>P.S. Re-consider this, because you already do this in data access layer.
