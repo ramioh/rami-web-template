@@ -55,7 +55,8 @@ The Starter Web Template takes a completely different approach to populate the D
 1. Services are discovered through assembly scanning. Any assembly that starts with `Company.Portal.SolutionName` will be automatically scanned. In `Program.cs`, a call to the extension method `ConfigureContainerDynamically()`, which is defined in the `Common/DependencyInjection` project, enables assembly scanning and dynamic registration.
 2. Scanned assemblies will be searched for classes that are decorated by a `RegisterType` attribute. This attribute is to be used in order to provide the type registration information. For example, a `Repository` class that is decorated by `[RegisterType(Lifetime.Scoped, typeof(IRepository))]` declares itself as an implementation for the `IRepository` interface and requires to  be registered as a `Scoped` service. 
 
-The approach above is much cleaner in my opinion. Not only does it overcome the two disadvantages mentioned above for traditional DI registration, but it also moves the declaration of registration parameters (i.e. types and lifetime) to where they should be; inside the implemented service. This makes those parameters more visible to the developers.
+This approach is much cleaner in my opinion. Not only does it overcome the two disadvantages mentioned above for traditional DI registration, but it also moves the declaration of registration parameters (i.e. types and lifetime) to where they should be; inside the implemented service. This makes those parameters more visible to the developers.
+
 
 >### 100. Launch settings and app settings?
 >### 101. Swagger?
