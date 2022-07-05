@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <!-- This path-based reference is only used for simplification and should be replaced
+  with a nuget package reference when the template is put in use. -->
+    <Reference Include="Company.Product.WeatherForecast.DependencyInjection">
+      <HintPath>..\..\..\common-packages\DependencyInjection\DependencyInjection\bin\Debug\net6.0\Company.Product.Common.DependencyInjection.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3.Application\Persistence.Contracts\Persistence.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

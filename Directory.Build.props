@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>Company.Product.$(SolutionName).$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Company.Product.$(SolutionName).$(MSBuildProjectName)</RootNamespace>
+  </PropertyGroup>
+
+</Project>
