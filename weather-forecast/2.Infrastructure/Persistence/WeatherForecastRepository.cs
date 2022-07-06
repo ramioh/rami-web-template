@@ -1,4 +1,4 @@
-using Company.Product.Common.DependencyInjection;
+using Company.Product.Common.ApiCore.DependencyInjection;
 using Company.Product.WeatherForecast.Persistence.Contracts;
 
 namespace Company.Product.WeatherForecast.Persistence;
