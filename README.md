@@ -52,7 +52,7 @@ In many ASP.NET projects, services are registered, one by one, in the default .N
 
 The WebApi Starter Template takes a completely different approach to populate the DI container, mainly through assembly scanning and attribute-based registration:
 
-1. Services are discovered through assembly scanning. Any assembly that starts with `Company.Portal.SolutionName` will be automatically scanned. In `Program.cs`, a call to the extension method `ConfigureContainerDynamically()`, which is defined in the `Common/DependencyInjection` project, enables assembly scanning and dynamic registration.
+1. Services are discovered through assembly scanning. Any assembly that starts with `Company.Portal.SolutionName` will be automatically scanned. In `Program.cs`, a call to the extension method `ConfigureContainerDynamically()`, which is defined in the `Common/ApiCore` project, enables assembly scanning and dynamic registration.
 2. Scanned assemblies will be searched for classes that are decorated by a `RegisterType` attribute. This attribute is to be used in order to provide the type registration information. For example, a `Repository` class that is decorated by `[RegisterType(Lifetime.Scoped, typeof(IRepository))]` declares itself as an implementation for the `IRepository` interface and requires to  be registered as a `Scoped` service. 
 
 This approach is much cleaner in my opinion. Not only does it overcome the two disadvantages mentioned above for traditional DI registration, but it also moves the declaration of registration parameters (i.e. types and lifetime) to where they should be; inside the implemented service. This makes those parameters more visible to the developers.
@@ -66,7 +66,7 @@ When using the WebApi Starter Template to create a new solution, the following s
 2. Rename the main solution folder `./weather-forecast`.
 3. Rename the solution file `./weather-forecast/WeatherForecast.sln`.
 4. All namespace `using` statements that start with `Company.Product.Common` and `Company.Product.WeatherForecast` in both solutions should be replaced.
-5. Publish the `DependencyInjection` project as a nuget package, and replace the path-based references to it with its nuget package reference. The use of a path-based reference is only for simplicity and should not be used in production.
+5. Publish the `ApiCore` project as a nuget package, and replace the path-based references to it with its nuget package reference. The use of a path-based reference is only for simplicity and should not be used in production.
 
 
 >## Purposefully omitted features
