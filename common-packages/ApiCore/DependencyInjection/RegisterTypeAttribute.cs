@@ -1,4 +1,4 @@
-namespace Company.Product.Common.DependencyInjection;
+namespace Company.Product.Common.ApiCore.DependencyInjection;
 
 [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
 public class RegisterTypeAttribute : Attribute
