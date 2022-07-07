@@ -1,3 +1,4 @@
+using Company.Product.Common.ApiCore.ApplicationSettings;
 using Company.Product.Common.ApiCore.DependencyInjection;
 using Company.Product.WeatherForecast.Api.Controllers;
 
@@ -7,7 +8,9 @@ builder.Services
     .AddControllers()
     .AddApplicationPart(typeof(WeatherForecastController).Assembly);
 
-builder.Services.ConfigureContainerDynamically();
+builder.Services
+    .ConfigureContainerDynamically()
+    .ConfigureApplicationSettings(builder.Configuration);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

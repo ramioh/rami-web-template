@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.CompositionRoot", "0.CompositionRoot", "{A610A70C-AE9D-49C6-A52C-808D1125D30A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Framework", "0.Framework", "{A610A70C-AE9D-49C6-A52C-808D1125D30A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{D21847E3-0242-43B9-B719-AAF31F3EA538}"
 EndProject
@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Application", "3.Applicat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Domain", "4.Domain", "{6276FD10-88CD-4AE6-A05D-82F67E2D571D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "0.CompositionRoot\Host\Host.csproj", "{DF0562BD-F559-4ECF-993C-8AE6133234A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "0.Framework\Host\Host.csproj", "{DF0562BD-F559-4ECF-993C-8AE6133234A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "1.Presentation\Api\Api.csproj", "{137BE9AB-D3CF-4D0F-9C28-38AEA1139BAF}"
 EndProject
