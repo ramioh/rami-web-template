@@ -10,3 +10,7 @@
 >I found this to be an overkill. First, the majority of developers have been trained enough to create dependencies on interfaces even when the implementations of these interfaces sit in the same project. Second, the Application layer is often the one with the most projects. Having twice as many of these projects is unnecessary clutter, in my opinion.
 
 >P.S. Re-consider this, because you already do this in data access layer.
+
+Code analysis
+global usings
+
