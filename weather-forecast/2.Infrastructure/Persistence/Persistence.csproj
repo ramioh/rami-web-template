@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
     <!-- This path-based reference is only used for simplification and should be replaced
-  with a nuget package reference when the template is put in use. -->
-    <Reference Include="Company.Product.WeatherForecast.DependencyInjection">
-      <HintPath>..\..\..\common-packages\DependencyInjection\DependencyInjection\bin\Debug\net6.0\Company.Product.Common.DependencyInjection.dll</HintPath>
+    with a nuget package reference when the template is put in use. -->
+    <Reference Include="Company.Product.Common.ApiFramework">
+      <HintPath>..\..\..\common-packages\ApiFramework\bin\Debug\net6.0\Company.Product.Common.ApiFramework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

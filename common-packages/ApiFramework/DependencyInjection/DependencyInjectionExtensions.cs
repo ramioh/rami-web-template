@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Company.Product.Common.DependencyInjection;
+namespace Company.Product.Common.ApiFramework.DependencyInjection;
 
 public static class DependencyInjectionExtensions
 {

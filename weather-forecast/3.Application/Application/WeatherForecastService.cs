@@ -1,4 +1,4 @@
-using Company.Product.Common.DependencyInjection;
+using Company.Product.Common.ApiFramework.DependencyInjection;
 using Company.Product.WeatherForecast.Application.Contracts;
 using Company.Product.WeatherForecast.Persistence.Contracts;
 

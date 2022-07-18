@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection\DependencyInjection.csproj", "{5DC988FC-95D2-49E7-97C1-66C3B5E80172}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFramework", "ApiFramework\ApiFramework.csproj", "{5DC988FC-95D2-49E7-97C1-66C3B5E80172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

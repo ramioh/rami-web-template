@@ -1,4 +1,4 @@
-namespace Company.Product.Common.DependencyInjection;
+namespace Company.Product.Common.ApiFramework.DependencyInjection;
 
 public enum Lifetime
 {
