@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFramework", "ApiFramework\ApiFramework.csproj", "{5DC988FC-95D2-49E7-97C1-66C3B5E80172}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiFramework.SourceGenerators", "ApiFramework.SourceGenerators\ApiFramework.SourceGenerators.csproj", "{5A398068-B6A9-4DE5-AF53-99B433C727BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{5DC988FC-95D2-49E7-97C1-66C3B5E80172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DC988FC-95D2-49E7-97C1-66C3B5E80172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DC988FC-95D2-49E7-97C1-66C3B5E80172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A398068-B6A9-4DE5-AF53-99B433C727BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A398068-B6A9-4DE5-AF53-99B433C727BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A398068-B6A9-4DE5-AF53-99B433C727BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A398068-B6A9-4DE5-AF53-99B433C727BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
